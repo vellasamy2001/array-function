@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+ let array=[1,2,3,4,5,6,7,8,9,10]
+   array[8]=10;
+   console.log(array);
+
+ array[3]='';
+console.log(array);
+
+array[4]=12;
+console.log(array);
+
+array=[];
+console.log(array);
+
+
+let a=[1,2,3,4,5,6,7,8,9,10]
+for(i=0;i<a.length;i++){
+    console.log(a[i]);
+}
+i=0;
+while(i<a.length){
+    document.write(a);
+    a++;
+}
+document.write("<br>");
+
+let b=[1,2,3,4,5,6,7,8,9,10]
+i=0;
+do{
+    document.write(b);
+    b++;
+}
+while(i<b.length);
+document.write("<br>");
+
+let x=[1,2,3,4,5,6,7]
+  let y=prompt("enter the position");
+  let z=prompt("enter the value");
+   function sum(){
+
+
+     for(i=0;i<x.length;i++){
+        x[y]=z;
+     }
+   }
+   sum();
+   document.write(x);
+
+
+let a=[1,2,3,4,5,6]
+ let b=prompt("enter the position");
+ let c=0;
+ let d=[];
+ for(i=0;i<a.length;i++){
+  if(a[i]!==a[b]){
+    d[c]=a[i];
+    c++;
+  } 
+
+
+ }
+ console.log(d);
+
+   array method//
+
+let num=[1,2,3,4,5];
+
+num.unshift(100);
+console.log(num);
+
+ concat//
+
+let a="hai";
+let b="hello";
+let c="welcome";
+let d="guys";
+let x=a.concat(b,c,d);
+console.log(x);
+
+filter method//
+
+let add=[1,3,4,6,8,25,98,67,43,56];
+ let result=add.filter(function(add1){
+    return add1>40;
+
+  });
+  console.log(result);
+
+reduce method
+
+let add=[1,3,4,6,9,8,67,43,56];
+ let result=add.reduce(function(value1,value2,value3){
+       return (value1+value2);
+});
+
+
+
+console.log(result);
+
+let add=[1,3,4,6,9,8,67,43,56];
+ let result=add.reduce(function(value1,value2,value3){
+    
+    return(value1+value2);
+  });
+  console.log(result);
+
+map method
+
+let animal=["cat","lion","elephant","rat","tiger"]
+  let result=animal.map(function(forest){
+return forest;
+  });
+console.log(result[4]);
+foreach
+
+let a=[1,2,3,4,5,6,7,8];
+a.forEach(function(vx1,vx2,vx3){
+    console.log(vx3);
+})
+let num=[];
+let a=prompt("enter the length");
+for(i=0;i<a;i++){
+    let b=prompt("enter the value");
+    num[i]=b;  
+
+}
+  let c=num.filter(function(add){
+     return d=(add>1000 && add<5000);     
+  })
+  document.write(JSON.stringify(num));
+
+
+let a=[1,2,3,4,5,6];
+  a[2]='';
+  console.log(a);
+
+  let b=[1,2,3,4,5,6,7,8,9,10];
+    for(i=0;i<b.length;i++){
+        if(b[i] % 4==0){
+            console.log(b[i]);
+        }
+    }
+    let c=[1,2,3,4,5,6,7,8,9,10];
+    for(i=0;i<c.length;i++){
+        if(c[i] % 3==0){
+            console.log(c[i]);
+        }
+    }
+    let d=[1,2,3,4,5,6,7,8,9,10];
+    for(i=0;i<d.length;i++){
+        if(d[i] % 5==0){
+            console.log(d[i]);
+        }
+    }
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
